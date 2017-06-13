@@ -1,0 +1,21 @@
+server:
+  port: 8088
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        health:
+          enabled:  false
+        native:
+          searchLocations: D:/work/devolop/inteliJ/workspace/springcloud-globalconfig1/config-server/src/main/resources/disk
+#        git:
+#          uri: file://D:/ideaprojects/epic/epic-robin/cloud-config-repo
+#          uri: https://git.oschina.net/bingyulei007/cloud-config-repo.git
+#          username: bingyulei008@gmail.com
+#          password: ******
+          searchPaths: /
+  application:
+    name: config-server
+
