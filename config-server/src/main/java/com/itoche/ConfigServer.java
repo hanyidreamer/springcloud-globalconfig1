@@ -11,6 +11,8 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  *
  * http://localhost:8088/cloud-config-common/application.property
  * http://localhost:8088/cloud-config/common
+ *
+ * 【post】 http://localhost:8081/refresh 刷新内存中属性
  */
 @SpringBootApplication
 @EnableConfigServer
